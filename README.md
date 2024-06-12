@@ -14,7 +14,6 @@ To get started with this project, follow these steps:
 ## Prerequisites
 Ensure you have the following installed and configured:
 
-- **Python 3.x**
 - **AWS CLI**: Configured with appropriate permissions.
 - **Python Packages**:
   - `pyaudio`
