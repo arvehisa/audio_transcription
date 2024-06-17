@@ -20,3 +20,6 @@ Ensure you have the following installed and configured:
   - `boto3`
   - `pydub`
 
+## Relative Blog
+https://zenn.dev/zhizhiarv/articles/whisper-realtime-transcribe-macbook
+
