@@ -4,7 +4,6 @@ import json
 from pydub import AudioSegment
 from io import BytesIO
 from datetime import datetime
-import os
 
 # Function to find the device index by name and get max input channels and rate
 def find_device_index_and_info(audio, name):
@@ -18,7 +17,7 @@ def find_device_index_and_info(audio, name):
 # Initialize SageMaker client
 client = boto3.client('runtime.sagemaker')
 audio = pyaudio.PyAudio()
-device_name = "Input" # Input your audio device name here
+device_name = "your_device_name" # Input your audio device name here
 
 # Input the name of the transcript
 transcript_name = input("Enter the name for the transcript: ")
@@ -32,7 +31,7 @@ if device_index is None:
 FORMAT = pyaudio.paInt16
 CHUNK = 4096
 RECORD_SECONDS = 10
-ENDPOINT_NAME = os.getenv('ENDPOINT_NAME')
+ENDPOINT_NAME = "your_sageamaker_endpoint_name"
 
 # Open audio stream using the correct device index, channels, and rate 
 stream = audio.open(format=FORMAT, channels=CHANNELS, rate=RATE, input=True, frames_per_buffer=CHUNK, input_device_index=device_index)
