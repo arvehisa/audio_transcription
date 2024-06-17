@@ -8,8 +8,8 @@ This project captures audio from a specified input device, processes it, and tra
 ## Setup Instructions
 To get started with this project, follow these steps:
 
-1. **Specify the Audio Device Name**: Update the code with the name of your audio input device.
-2. **Set the SageMaker Endpoint**: Define the `ENDPOINT_NAME` environment variable with your SageMaker Endpoint name.
+1. Specify the audio device name
+2. Specify your sagemaker endpoin name
 
 ## Prerequisites
 Ensure you have the following installed and configured:
